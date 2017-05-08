@@ -1,0 +1,41 @@
+.link_cont{
+
+    text-align: center;
+}
+.link_cont a{
+    display: inline-block;
+    padding:0 5px;
+    font-size:14px;
+}
+.link_title{
+    font-size: 14px;
+    margin:3px auto;
+    text-align: center;
+}
+#time{
+    line-height:35px;
+    font-size:14px;
+    color: #ffab2e;
+    text-align: center;
+}
+.top_link{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.top_link a{
+    display: inline-block;
+    margin:8px;
+}
+.cont_btn{
+    text-align: center;
+    line-height:20px;
+    margin: 2px 0px;
+    background:#ccc;
+}
+.cont_btn:hover{
+    background: #fff;
+    color: #ff0000;
+}
+
+

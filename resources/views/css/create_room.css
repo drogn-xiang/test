@@ -1,0 +1,17 @@
+/*创建客房样式*/
+.create_room table{
+    margin:30px auto 0;
+}
+.create_room table td{
+    padding:5px 30px;
+}
+.create_room{
+    text-align: center;
+}
+#room_err{
+    margin:10px 0 20px;
+    min-width:300px;
+    max-width: 300px;
+    min-height:150px;
+    max-height: 150px;
+}

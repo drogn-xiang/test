@@ -1,0 +1,49 @@
+$(function(){
+    //綁定點擊事件
+    $('#dg').datagrid({
+        onClickRow: function (index, row){
+            Order_id=row.order_id;
+            //发送ajax请求,刷新
+            $('#win').window({
+                title:'结账',
+                width:600,
+                height:800,
+                modal:true,
+                href:'http://localhost/hotel_test/public/order/jiezhao'
+            });
+        }
+    })
+
+    //绑定事件
+    //查询已经完成的订单
+    $('.order_end').on('click',function(){
+        $('#dg').datagrid({
+            url:"http://localhost/hotel_test/public/orderinfo/end",
+            method:"post"
+        });
+    })
+    //查询正常租住中的订单
+    $('.order_ing').on('click',function(){
+        $('#dg').datagrid({
+            url:"http://localhost/hotel_test/public/orderinfo/ing",
+            method:"post"
+        });
+    })
+    //查询已经到期的房间订单
+    $('.order_bad').on('click',function(){
+        $('#dg').datagrid({
+            url:"http://localhost/hotel_test/public/orderinfo/bad",
+            method:"post"
+        });
+    })
+    //刷新
+    $('.order_reload').on('click',function(){
+        $('#dg').datagrid({
+            url:"http://localhost/hotel_test/public/orderinfo/all",
+            method:"post"
+        });
+    })
+
+    //重新渲染
+    $.parser.parse($('#cont'));
+})

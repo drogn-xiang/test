@@ -1,0 +1,9 @@
+.end_order table{
+    margin:30px auto 0;
+}
+.end_order table td{
+    padding:5px 30px;
+}
+.end_order{
+    text-align: center;
+}
